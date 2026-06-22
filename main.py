@@ -1,6 +1,6 @@
-"""reducer_b535a6 - Simple checker."""
+"""reducer_736166 - Simple checker."""
 import urllib.request, sys, time
-SERVICE_TAG = "reducer_b535a6"
+SERVICE_TAG = "reducer_736166"
 TARGETS = ["https://httpbin.org/status/200", "https://example.com"]
 def check(url: str) -> dict:
     try:
